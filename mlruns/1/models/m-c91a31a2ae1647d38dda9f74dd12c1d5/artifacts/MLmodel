@@ -1,0 +1,23 @@
+artifact_path: file:C:/ml-fastapi-docker/mlruns/1/models/m-c91a31a2ae1647d38dda9f74dd12c1d5/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+    skops_trusted_types: null
+mlflow_version: 3.11.1
+model_id: m-c91a31a2ae1647d38dda9f74dd12c1d5
+model_size_bytes: 177297
+model_uuid: m-c91a31a2ae1647d38dda9f74dd12c1d5
+prompts: null
+run_id: dcde1ce3341f488cade319983f852c2e
+utc_time_created: '2026-04-24 09:30:24.250798'
