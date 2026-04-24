@@ -1,9 +1,9 @@
 # SIS 3
 ## What's changed?
-    Integrated MLFlow.
-    Added Frontend UI to ease work with the ML model for better user-experience.
+- Integrated MLFlow.
+- Added Frontend UI to ease work with the ML model for better user-experience.
 ## Description
-    This project focuses on imulating the production process: workflow and lifecycle of ML model. MLFlow is used for managing ML models, experimenting, and other related stuff.
+This project focuses on imulating the production process: workflow and lifecycle of ML model. MLFlow is used for managing ML models, experimenting, and other related stuff.
 ## Instructions
 ### 0. Install Requirements
 ```
@@ -13,23 +13,23 @@ pip install -r requirements.txt
 ```
 python train.py
 ```
-#### 2. Run API
+### 2. Run API
 ```
 uvicorn main:app --reload
 ```
-#### 3. Run FrontendUI
+### 3. Run FrontendUI
 ```
 streamlit run streamlit_app.py
 ```
-#### 4. Run MLFlow
+### 4. Run MLFlow
 ```
 mlflow ui
 ```
-#### 5. Docker build
+### 5. Docker build
 ```
 docker build -t ml-fastapi-app .
 ```
-#### 6. Run container
+### 6. Run container
 ```
 docker run -p 8000:8000 -v ${PWD}/mlruns:/app/mlruns ml-backend 
 ```
